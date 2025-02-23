@@ -21,6 +21,7 @@ return {
 				"java",
 				"json",
 				"yaml",
+                "python"
 			},
 			sync_install = false,
 			highlight = { enable = true },

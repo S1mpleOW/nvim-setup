@@ -11,8 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
-
+vim.opt.clipboard = "unnamedplus"
 -- install plugins and options
 require("vim-options")
 require("vim-helpers")
+require("help-floating")
+require("floating-term")
 require("lazy").setup("plugins")
